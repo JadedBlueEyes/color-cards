@@ -1,0 +1,4 @@
+640x1136 1136x640 750x1334 1334x750 1242x2208 2208x1242 1125x2436 2436x1125 1125x2436 2436x1125 1536x2048 2048x1536 1668x2224 2224x1668 2048x2732 2732x2048
+
+([0-9]+)x([0-9]+)
+<link rel="apple-touch-startup-image" media="(device-width: $1px) and (device-height: $2px)" href="/splash-$1x$2.png">

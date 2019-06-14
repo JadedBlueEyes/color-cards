@@ -14,6 +14,7 @@
       overflow: hidden;
       cursor: pointer;
       position: fixed;
+      -webkit-overflow-scrolling: touch;
     }
   </style>
 </head>
@@ -24,6 +25,12 @@
     var index = 0;
     var max = colors.length - 1;
     var el = document.body;
+    var prevDef = (e) => {
+      e.preventDefault();
+    };
+    el.addEventListener("touchstart", prevDef);
+    el.addEventListener("touch", prevDef);
+    el.addEventListener("click", prevDef);
 
     var ua = navigator.userAgent,
       isiOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false,
